@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:avr-attiny1614-mini-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -65,78 +66,78 @@ SDA
 $Comp
 L Device:R R5
 U 1 1 5C0C9DA1
-P 6300 4050
-F 0 "R5" H 6370 4097 50  0000 L CNN
-F 1 "10k" H 6370 4004 50  0000 L CNN
-F 2 "local_footprints:0805_HS" V 6230 4050 50  0001 C CNN
-F 3 "~" H 6300 4050 50  0001 C CNN
-	1    6300 4050
+P 7150 4200
+F 0 "R5" H 7220 4247 50  0000 L CNN
+F 1 "10k" H 7220 4154 50  0000 L CNN
+F 2 "local_footprints:0805_HS" V 7080 4200 50  0001 C CNN
+F 3 "~" H 7150 4200 50  0001 C CNN
+	1    7150 4200
 	1    0    0    -1  
 $EndComp
-Text GLabel 6200 3800 0    50   Input ~ 0
+Text GLabel 7050 3950 0    50   Input ~ 0
 VIN
 Wire Wire Line
-	6300 3900 6300 3800
+	7150 4050 7150 3950
 $Comp
 L Device:R R6
 U 1 1 5C0CA345
-P 6600 4050
-F 0 "R6" H 6670 4097 50  0000 L CNN
-F 1 "10k" H 6670 4004 50  0000 L CNN
-F 2 "local_footprints:0805_HS" V 6530 4050 50  0001 C CNN
-F 3 "~" H 6600 4050 50  0001 C CNN
-	1    6600 4050
+P 7450 4200
+F 0 "R6" H 7520 4247 50  0000 L CNN
+F 1 "10k" H 7520 4154 50  0000 L CNN
+F 2 "local_footprints:0805_HS" V 7380 4200 50  0001 C CNN
+F 3 "~" H 7450 4200 50  0001 C CNN
+	1    7450 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 3900 6600 3800
-Text Label 6250 4300 2    50   ~ 0
+	7450 4050 7450 3950
+Text Label 7100 4450 2    50   ~ 0
 SCL
-Text Label 6550 4300 2    50   ~ 0
+Text Label 7400 4450 2    50   ~ 0
 SDA
-Text Notes 6150 4750 0    50   ~ 0
+Text Notes 7000 4900 0    50   ~ 0
 I2C pull-ups
 Wire Wire Line
-	6600 3800 6300 3800
+	7450 3950 7150 3950
 Wire Wire Line
-	6300 3800 6200 3800
-Connection ~ 6300 3800
+	7150 3950 7050 3950
+Connection ~ 7150 3950
 Wire Wire Line
-	6300 4200 6300 4300
+	7150 4350 7150 4450
 Wire Wire Line
-	6300 4300 6250 4300
+	7150 4450 7100 4450
 Wire Wire Line
-	6600 4200 6600 4300
+	7450 4350 7450 4450
 Wire Wire Line
-	6600 4300 6550 4300
+	7450 4450 7400 4450
 Text Label 4650 2500 0    50   ~ 0
 ~RESET
-Text Label 7350 3700 2    50   ~ 0
+Text Label 8300 3850 2    50   ~ 0
 ~RESET
 Wire Wire Line
-	7350 3700 7400 3700
+	8300 3850 8350 3850
 Wire Wire Line
-	7400 3700 7400 3800
+	8350 3850 8350 3950
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5C0CBBCD
-P 7400 4000
-F 0 "SW1" V 7353 4102 50  0000 L CNN
-F 1 "SW_SPST" V 7446 4102 50  0000 L CNN
-F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 7400 4000 50  0001 C CNN
-F 3 "" H 7400 4000 50  0001 C CNN
-	1    7400 4000
+P 8350 4150
+F 0 "SW1" V 8303 4252 50  0000 L CNN
+F 1 "SW_SPST" V 8396 4252 50  0000 L CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 8350 4150 50  0001 C CNN
+F 3 "" H 8350 4150 50  0001 C CNN
+	1    8350 4150
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 5C0CBE54
-P 7400 4400
-F 0 "#PWR05" H 7400 4150 50  0001 C CNN
-F 1 "GND" H 7404 4221 50  0000 C CNN
-F 2 "" H 7400 4400 50  0001 C CNN
-F 3 "" H 7400 4400 50  0001 C CNN
-	1    7400 4400
+P 8350 4550
+F 0 "#PWR05" H 8350 4300 50  0001 C CNN
+F 1 "GND" H 8354 4371 50  0000 C CNN
+F 2 "" H 8350 4550 50  0001 C CNN
+F 3 "" H 8350 4550 50  0001 C CNN
+	1    8350 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -197,100 +198,48 @@ $EndComp
 $Comp
 L Device:R_Small R7
 U 1 1 5C0CF277
-P 7400 4300
-F 0 "R7" H 7459 4347 50  0000 L CNN
-F 1 "100" H 7459 4254 50  0000 L CNN
-F 2 "local_footprints:1206_HS" H 7400 4300 50  0001 C CNN
-F 3 "~" H 7400 4300 50  0001 C CNN
-	1    7400 4300
+P 8350 4450
+F 0 "R7" H 8409 4497 50  0000 L CNN
+F 1 "100" H 8409 4404 50  0000 L CNN
+F 2 "local_footprints:1206_HS" H 8350 4450 50  0001 C CNN
+F 3 "~" H 8350 4450 50  0001 C CNN
+	1    8350 4450
 	1    0    0    -1  
 $EndComp
-Text Notes 7200 4750 0    50   ~ 0
+Text Notes 8150 4900 0    50   ~ 0
 Reset button
-Text GLabel 3100 3850 2    50   Input ~ 0
-VBAT_SENSE
-Text GLabel 2800 2200 0    50   Input ~ 0
-VBAT_SENSE
-$Comp
-L Device:R R2
-U 1 1 5C0D012D
-P 2750 3850
-F 0 "R2" V 2960 3850 50  0000 C CNN
-F 1 "1k" V 2867 3850 50  0000 C CNN
-F 2 "local_footprints:0805_HS" V 2680 3850 50  0001 C CNN
-F 3 "~" H 2750 3850 50  0001 C CNN
-	1    2750 3850
-	0    -1   -1   0   
-$EndComp
-Text GLabel 2500 3850 0    50   Input ~ 0
-VIN
-$Comp
-L Device:C C2
-U 1 1 5C0D0639
-P 3000 4100
-F 0 "C2" H 3115 4147 50  0000 L CNN
-F 1 "100nF" H 3115 4054 50  0000 L CNN
-F 2 "local_footprints:0805_HS" H 3038 3950 50  0001 C CNN
-F 3 "~" H 3000 4100 50  0001 C CNN
-	1    3000 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 3850 3100 3850
-Wire Wire Line
-	2900 3850 3000 3850
-Connection ~ 3000 3850
-Wire Wire Line
-	3000 3850 3000 3950
-Wire Wire Line
-	3000 4250 3000 4350
-$Comp
-L power:GND #PWR04
-U 1 1 5C0D1B7E
-P 3000 4350
-F 0 "#PWR04" H 3000 4100 50  0001 C CNN
-F 1 "GND" H 3004 4171 50  0000 C CNN
-F 2 "" H 3000 4350 50  0001 C CNN
-F 3 "" H 3000 4350 50  0001 C CNN
-	1    3000 4350
-	1    0    0    -1  
-$EndComp
-Text Notes 2650 4750 0    50   ~ 0
-Input voltage sensing
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5C0D2F02
-P 1350 4000
-F 0 "J3" H 1268 4220 50  0000 C CNN
-F 1 "BAT_JST_PH" H 1268 4127 50  0000 C CNN
-F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 1350 4000 50  0001 C CNN
-F 3 "~" H 1350 4000 50  0001 C CNN
-	1    1350 4000
+P 1250 4150
+F 0 "J3" H 1168 4370 50  0000 C CNN
+F 1 "BAT_JST_PH" H 1168 4277 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 1250 4150 50  0001 C CNN
+F 3 "~" H 1250 4150 50  0001 C CNN
+	1    1250 4150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 4000 1650 4000
+	1450 4150 1550 4150
 Wire Wire Line
-	1550 4100 1650 4100
+	1450 4250 1550 4250
 Wire Wire Line
-	1650 4100 1650 4200
+	1550 4250 1550 4350
 $Comp
 L power:GND #PWR03
 U 1 1 5C0D3CC7
-P 1650 4200
-F 0 "#PWR03" H 1650 3950 50  0001 C CNN
-F 1 "GND" H 1654 4021 50  0000 C CNN
-F 2 "" H 1650 4200 50  0001 C CNN
-F 3 "" H 1650 4200 50  0001 C CNN
-	1    1650 4200
+P 1550 4350
+F 0 "#PWR03" H 1550 4100 50  0001 C CNN
+F 1 "GND" H 1554 4171 50  0000 C CNN
+F 2 "" H 1550 4350 50  0001 C CNN
+F 3 "" H 1550 4350 50  0001 C CNN
+	1    1550 4350
 	1    0    0    -1  
 $EndComp
-Text GLabel 1650 4000 2    50   Input ~ 0
+Text GLabel 1550 4150 2    50   Input ~ 0
 VIN
-Text Notes 1050 4750 0    50   ~ 0
+Text Notes 950  4900 0    50   ~ 0
 JST PH (2.00mm) for battery
-Wire Wire Line
-	2600 3850 2500 3850
 Text Label 5000 2200 0    50   ~ 0
 SCK
 Text Label 5000 2300 0    50   ~ 0
@@ -300,72 +249,67 @@ MOSI
 $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 5C0D6B1E
-P 5000 3900
-F 0 "Q1" H 5206 3853 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 5206 3946 50  0000 L CNN
-F 2 "local_footprints:SOT-23_HS" H 5200 4000 50  0001 C CNN
-F 3 "~" H 5000 3900 50  0001 C CNN
-	1    5000 3900
+P 3300 4150
+F 0 "Q1" H 3506 4103 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 3506 4196 50  0000 L CNN
+F 2 "local_footprints:SOT-23_HS" H 3500 4250 50  0001 C CNN
+F 3 "~" H 3300 4150 50  0001 C CNN
+	1    3300 4150
 	1    0    0    1   
 $EndComp
-Text GLabel 4300 3500 0    50   Input ~ 0
+Text GLabel 2600 3750 0    50   Input ~ 0
 VIN
 Wire Wire Line
-	5100 4100 5100 4300
+	3400 4350 3400 4550
 Wire Wire Line
-	5100 4300 5200 4300
-Text GLabel 5200 4300 2    50   Input ~ 0
-VOUT-~PA5
+	3400 4550 3500 4550
 $Comp
 L Device:R_Small R3
 U 1 1 5C0D7BEE
-P 4400 3700
-F 0 "R3" H 4459 3747 50  0000 L CNN
-F 1 "100k" H 4459 3654 50  0000 L CNN
-F 2 "local_footprints:0805_HS" H 4400 3700 50  0001 C CNN
-F 3 "~" H 4400 3700 50  0001 C CNN
-	1    4400 3700
+P 2700 3950
+F 0 "R3" H 2759 3997 50  0000 L CNN
+F 1 "100k" H 2759 3904 50  0000 L CNN
+F 2 "local_footprints:0805_HS" H 2700 3950 50  0001 C CNN
+F 3 "~" H 2700 3950 50  0001 C CNN
+	1    2700 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 3500 4400 3600
+	2700 3750 2700 3850
 Wire Wire Line
-	5100 3500 5100 3700
+	3400 3750 3400 3950
 Wire Wire Line
-	4400 3500 4300 3500
-Connection ~ 4400 3500
+	2700 3750 2600 3750
 Wire Wire Line
-	4400 3800 4400 3900
+	2700 4050 2700 4150
 Wire Wire Line
-	4700 3900 4800 3900
+	3000 4150 3100 4150
 $Comp
 L Device:R_Small R4
 U 1 1 5C0DAAD2
-P 4600 3900
-F 0 "R4" V 4500 3900 50  0000 C CNN
-F 1 "100" V 4400 3900 50  0000 C CNN
-F 2 "local_footprints:1206_HS" H 4600 3900 50  0001 C CNN
-F 3 "~" H 4600 3900 50  0001 C CNN
-	1    4600 3900
+P 2900 4150
+F 0 "R4" V 2800 4150 50  0000 C CNN
+F 1 "100" V 2700 4150 50  0000 C CNN
+F 2 "local_footprints:1206_HS" H 2900 4150 50  0001 C CNN
+F 3 "~" H 2900 4150 50  0001 C CNN
+	1    2900 4150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4500 3900 4400 3900
+	2800 4150 2700 4150
 Wire Wire Line
-	4400 3500 5100 3500
-Text GLabel 4300 3900 0    50   Input ~ 0
-VOUT-~EN
+	2700 3750 3400 3750
+Text GLabel 2600 4150 0    50   Input ~ 0
+VOUT1-~EN
 Wire Wire Line
-	4300 3900 4400 3900
-Connection ~ 4400 3900
-Text GLabel 3250 2300 0    50   Input ~ 0
-VOUT-~EN
+	2600 4150 2700 4150
+Connection ~ 2700 4150
+Text GLabel 3250 2200 0    50   Input ~ 0
+VOUT1-~EN
 Wire Wire Line
-	2800 2200 3350 2200
-Wire Wire Line
-	3350 2300 3250 2300
-Text Notes 4200 4750 0    50   ~ 0
-VOUT driver using ~PA5~ (active low)
+	3350 2200 3250 2200
+Text Notes 2500 4900 0    50   ~ 0
+VOUT1 driver using ~PA4~ (active low)
 $Comp
 L Connector_Generic:Conn_01x05 J1
 U 1 1 5C0E3557
@@ -401,4 +345,182 @@ Text Label 5350 2500 0    50   ~ 0
 UPDI
 Text Notes 3450 3100 0    50   ~ 0
 Attiny1614, with 12 (out of 14)\npins broken out
+Text GLabel 2750 2300 0    50   Input ~ 0
+VEXT-EN
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5C0EBE90
+P 3700 4550
+F 0 "J6" H 3780 4591 50  0000 L CNN
+F 1 "VOUT1" H 3780 4498 50  0000 L CNN
+F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 3700 4550 50  0001 C CNN
+F 3 "~" H 3700 4550 50  0001 C CNN
+	1    3700 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 3750
+Wire Wire Line
+	2750 2300 3350 2300
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 5C118D44
+P 5500 4000
+F 0 "Q2" H 5705 4047 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 5705 3954 50  0000 L CNN
+F 2 "local_footprints:SOT-23_HS" H 5700 4100 50  0001 C CNN
+F 3 "~" H 5500 4000 50  0001 C CNN
+	1    5500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5C118E1D
+P 4900 4200
+F 0 "R9" H 4959 4247 50  0000 L CNN
+F 1 "100k" H 4959 4154 50  0000 L CNN
+F 2 "local_footprints:0805_HS" H 4900 4200 50  0001 C CNN
+F 3 "~" H 4900 4200 50  0001 C CNN
+	1    4900 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4100 4900 4000
+Wire Wire Line
+	5200 4000 5300 4000
+Wire Wire Line
+	5600 3300 5500 3300
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5C11CBBA
+P 5300 3300
+F 0 "J7" H 5218 3520 50  0000 C CNN
+F 1 "EXT_VIN" H 5218 3427 50  0000 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 5300 3300 50  0001 C CNN
+F 3 "~" H 5300 3300 50  0001 C CNN
+	1    5300 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3400 5700 3400
+Wire Wire Line
+	5700 3700 5600 3700
+Wire Wire Line
+	5600 3300 5600 3400
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5C1299A2
+P 5900 3400
+F 0 "J8" H 6050 3300 50  0000 C CNN
+F 1 "EXT_LOAD+" H 6200 3400 50  0000 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 5900 3400 50  0001 C CNN
+F 3 "~" H 5900 3400 50  0001 C CNN
+	1    5900 3400
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5C129AA1
+P 5900 3700
+F 0 "J9" H 6050 3650 50  0000 C CNN
+F 1 "EXT_LOAD-" H 6200 3750 50  0000 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 5900 3700 50  0001 C CNN
+F 3 "~" H 5900 3700 50  0001 C CNN
+	1    5900 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5C12CDB2
+P 5600 4500
+F 0 "#PWR06" H 5600 4250 50  0001 C CNN
+F 1 "GND" H 5604 4321 50  0000 C CNN
+F 2 "" H 5600 4500 50  0001 C CNN
+F 3 "" H 5600 4500 50  0001 C CNN
+	1    5600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4200 5600 4400
+Wire Wire Line
+	4900 4300 4900 4400
+Connection ~ 5600 4400
+Wire Wire Line
+	5600 4400 5600 4500
+$Comp
+L Device:R_Small R8
+U 1 1 5C1363AA
+P 5100 4000
+F 0 "R8" V 5300 4000 50  0000 C CNN
+F 1 "100" V 5200 4000 50  0000 C CNN
+F 2 "local_footprints:1206_HS" H 5100 4000 50  0001 C CNN
+F 3 "~" H 5100 4000 50  0001 C CNN
+	1    5100 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 4000 4900 4000
+Wire Wire Line
+	4900 4400 5600 4400
+Wire Wire Line
+	4900 4000 4800 4000
+Connection ~ 4900 4000
+Text GLabel 4800 4000 0    50   Input ~ 0
+VEXT-EN
+$Comp
+L Device:D_Schottky D1
+U 1 1 5C143C60
+P 5600 3550
+F 0 "D1" V 5550 3350 50  0000 L CNN
+F 1 "D_Schottky" V 5650 3050 50  0000 L CNN
+F 2 "local_footprints:1206_HS" H 5600 3550 50  0001 C CNN
+F 3 "~" H 5600 3550 50  0001 C CNN
+	1    5600 3550
+	0    1    1    0   
+$EndComp
+Connection ~ 5600 3400
+Wire Wire Line
+	5600 3700 5600 3800
+Connection ~ 5600 3700
+Text Notes 4850 5050 0    50   ~ 0
+External load (EXT_LOAD+/-) driver,\nusing external (EXT_VIN) supply,\ncontrolled by PA5 (active high).
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5C14DBBF
+P 9750 4300
+F 0 "J5" H 9900 4300 50  0000 C CNN
+F 1 "GND" H 10050 4300 50  0000 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 9750 4300 50  0001 C CNN
+F 3 "~" H 9750 4300 50  0001 C CNN
+	1    9750 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5C15005B
+P 9750 4100
+F 0 "J4" H 9900 4100 50  0000 C CNN
+F 1 "GND" H 10050 4100 50  0000 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 9750 4100 50  0001 C CNN
+F 3 "~" H 9750 4100 50  0001 C CNN
+	1    9750 4100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9550 4100 9550 4300
+Connection ~ 9550 4300
+Wire Wire Line
+	9550 4300 9550 4400
+$Comp
+L power:GND #PWR04
+U 1 1 5C152576
+P 9550 4400
+F 0 "#PWR04" H 9550 4150 50  0001 C CNN
+F 1 "GND" H 9554 4221 50  0000 C CNN
+F 2 "" H 9550 4400 50  0001 C CNN
+F 3 "" H 9550 4400 50  0001 C CNN
+	1    9550 4400
+	1    0    0    -1  
+$EndComp
+Text Notes 9300 4900 0    50   ~ 0
+Extra GND pins.
 $EndSCHEMATC
