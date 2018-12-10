@@ -523,4 +523,36 @@ F 3 "" H 9550 4400 50  0001 C CNN
 $EndComp
 Text Notes 9300 4900 0    50   ~ 0
 Extra GND pins.
+$Comp
+L Connector:USB_B_Micro J10
+U 1 1 5C15786E
+P 1400 5900
+F 0 "J10" H 1457 6370 50  0000 C CNN
+F 1 "USB_B_Micro" H 1457 6277 50  0000 C CNN
+F 2 "local_footprints:USB-micro-B_Amphenol-10118194-0X0XLF_HS" H 1550 5850 50  0001 C CNN
+F 3 "~" H 1550 5850 50  0001 C CNN
+	1    1400 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6300 1400 6500
+$Comp
+L power:GND #PWR0101
+U 1 1 5C158E1E
+P 1400 6500
+F 0 "#PWR0101" H 1400 6250 50  0001 C CNN
+F 1 "GND" H 1404 6321 50  0000 C CNN
+F 2 "" H 1400 6500 50  0001 C CNN
+F 3 "" H 1400 6500 50  0001 C CNN
+	1    1400 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5700 1900 5700
+Text GLabel 1900 5700 2    50   Input ~ 0
+VIN
+NoConn ~ 1700 5900
+NoConn ~ 1700 6000
+Text Notes 950  6950 0    50   ~ 0
+Micro-USB connector for VIN.
 $EndSCHEMATC
