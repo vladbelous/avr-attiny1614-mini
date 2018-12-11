@@ -38,27 +38,6 @@ F 3 "~" H 5100 2500 50  0001 C CNN
 	1    5100 2500
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x07 J2
-U 1 1 5C0C959B
-P 5750 2400
-F 0 "J2" H 5830 2441 50  0000 L CNN
-F 1 "Conn_01x07" H 5830 2348 50  0000 L CNN
-F 2 "local_footprints:Pin_Header_Straight_1x07_Pitch2.54mm" H 5750 2400 50  0001 C CNN
-F 3 "~" H 5750 2400 50  0001 C CNN
-	1    5750 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 2200 5550 2200
-Wire Wire Line
-	4500 2300 5550 2300
-Wire Wire Line
-	4500 2400 5550 2400
-Wire Wire Line
-	4500 2600 5550 2600
-Wire Wire Line
-	4500 2700 5550 2700
 Text Label 4650 2600 0    50   ~ 0
 SCL
 Text Label 4650 2700 0    50   ~ 0
@@ -182,8 +161,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 1700 4750 1800
 Connection ~ 4550 2100
-Wire Wire Line
-	4550 2100 5550 2100
 $Comp
 L power:GND #PWR01
 U 1 1 5C0CDEE4
@@ -339,10 +316,6 @@ Wire Wire Line
 	1750 2300 1850 2300
 Wire Wire Line
 	4500 2500 4950 2500
-Wire Wire Line
-	5250 2500 5550 2500
-Text Label 5350 2500 0    50   ~ 0
-UPDI
 Text Notes 3450 3100 0    50   ~ 0
 Attiny1614, with 12 (out of 14)\npins broken out
 Text GLabel 2750 2300 0    50   Input ~ 0
@@ -472,7 +445,7 @@ U 1 1 5C143C60
 P 5600 3550
 F 0 "D1" V 5550 3350 50  0000 L CNN
 F 1 "D_Schottky" V 5650 3050 50  0000 L CNN
-F 2 "local_footprints:1206_HS" H 5600 3550 50  0001 C CNN
+F 2 "local_footprints:1206_Diode_HS" H 5600 3550 50  0001 C CNN
 F 3 "~" H 5600 3550 50  0001 C CNN
 	1    5600 3550
 	0    1    1    0   
@@ -523,4 +496,54 @@ F 3 "" H 9550 4400 50  0001 C CNN
 $EndComp
 Text Notes 9300 4900 0    50   ~ 0
 Extra GND pins.
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 5C0FA426
+P 5950 2300
+F 0 "J2" H 6030 2291 50  0000 L CNN
+F 1 "Conn_01x06" H 6030 2198 50  0000 L CNN
+F 2 "" H 5950 2300 50  0001 C CNN
+F 3 "~" H 5950 2300 50  0001 C CNN
+	1    5950 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2500 5350 2500
+Text GLabel 5350 2500 2    50   Input ~ 0
+UPDI
+Wire Wire Line
+	4550 2100 5750 2100
+Wire Wire Line
+	4500 2200 5750 2200
+Wire Wire Line
+	4500 2300 5750 2300
+Wire Wire Line
+	4500 2400 5750 2400
+Wire Wire Line
+	5650 2600 5650 2500
+Wire Wire Line
+	5650 2500 5750 2500
+Wire Wire Line
+	4500 2600 5650 2600
+Wire Wire Line
+	5750 2700 5750 2600
+Wire Wire Line
+	4500 2700 5750 2700
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5C1067D4
+P 7500 2500
+F 0 "J?" H 7650 2500 50  0000 C CNN
+F 1 "UPDI" H 7700 2400 50  0000 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 7500 2500 50  0001 C CNN
+F 3 "~" H 7500 2500 50  0001 C CNN
+	1    7500 2500
+	1    0    0    1   
+$EndComp
+Text GLabel 7200 2500 0    50   Input ~ 0
+UPDI
+Wire Wire Line
+	7200 2500 7300 2500
+Text Notes 7000 2800 0    50   ~ 0
+UPDI prog header
 $EndSCHEMATC
