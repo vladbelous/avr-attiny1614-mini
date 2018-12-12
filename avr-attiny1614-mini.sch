@@ -383,8 +383,8 @@ $Comp
 L Connector_Generic:Conn_01x01 J8
 U 1 1 5C1299A2
 P 5900 3400
-F 0 "J8" H 6050 3300 50  0000 C CNN
-F 1 "EXT_LOAD+" H 6200 3400 50  0000 C CNN
+F 0 "J8" H 6050 3350 50  0000 C CNN
+F 1 "EXT_LOAD+" H 6200 3450 50  0000 C CNN
 F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 5900 3400 50  0001 C CNN
 F 3 "~" H 5900 3400 50  0001 C CNN
 	1    5900 3400
@@ -546,4 +546,24 @@ Wire Wire Line
 	7200 2500 7300 2500
 Text Notes 7000 2800 0    50   ~ 0
 UPDI prog header
+Text Label 5550 3300 0    50   ~ 0
+EXT_VIN_LOAD+
+Text Label 5600 3750 2    50   ~ 0
+EXT_LOAD-
+Text Label 3400 4550 2    50   ~ 0
+VOUT1
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 5C109BD6
+P 9750 3900
+F 0 "J11" H 9900 3900 50  0000 C CNN
+F 1 "GND" H 10050 3900 50  0000 C CNN
+F 2 "local_footprints:Pin_Header_Straight_1x01_Pitch2.54mm" H 9750 3900 50  0001 C CNN
+F 3 "~" H 9750 3900 50  0001 C CNN
+	1    9750 3900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9550 3900 9550 4100
+Connection ~ 9550 4100
 $EndSCHEMATC
