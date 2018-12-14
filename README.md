@@ -2,7 +2,7 @@
 TODO: add description
 
 ## Schematic:
-TODO
+![schematic](img/schematic.png)
 
-## Layout:
-TODO
+## Layout (front):
+![layout](img/pcb_layout.png)
