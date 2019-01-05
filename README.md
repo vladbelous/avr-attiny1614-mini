@@ -15,7 +15,7 @@ This board has already been fabricated and tested to work.
 It is available as a [shared project on OSHPark](https://oshpark.com/shared_projects/I7XN0JuT).
 
 ### Note on UPDI/~RESET pin:
-Pin PA6 (UPDI/~RESET) can be used for either programming (via UPDI protocol) or RESET source functionality, but *you have to choose* between the two via a fuse setting. By default the fuse is setup for UPDI.
+Pin PA0 (UPDI/~RESET) can be used for either programming (via UPDI protocol) or RESET source functionality, but *you have to choose* between the two via a fuse setting. By default the fuse is setup for UPDI.
 
 If you set the fuses for RESET source, programming the chip will require applying 12V, which is somewhat inconvenient.
 
