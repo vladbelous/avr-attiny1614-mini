@@ -3,7 +3,7 @@
 This is a simple breakout board for Attiny1614 MCU with a button and some pins dedicated to switching loads via MOSFETs.
 
 Attiny1614 ([datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf)) is a new 8-bit AVR part from tinyAVR 1-Series.
-In many important ways its architecture is much closer to atxmega rather than to (the older) attiny/atmega parts.
+In many important ways its architecture is much closer to atxmega rather than to (previous) attiny/atmega parts.
 In fact, in avr-gcc it is categorized under avrxmega3 architecture.
 
 This particular board has:
